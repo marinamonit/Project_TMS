@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "main",
     "goods",
     "debug_toolbar",
+    "users",
 ]
 
 MIDDLEWARE = [
