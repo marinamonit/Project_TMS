@@ -31,10 +31,6 @@ urlpatterns = [
         "catalog/",
         include("goods.urls", namespace="catalog"),
     ),
-    path(
-        "user/",
-        include("users.urls", namespace="user"),
-    ),
 ]
 
 

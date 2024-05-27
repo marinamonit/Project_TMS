@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
-from django.conf.global_settings import MEDIA_ROOT, MEDIA_URL
+from django.conf.global_settings import AUTH_USER_MODEL, MEDIA_ROOT, MEDIA_URL
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     "main",
     "goods",
     "debug_toolbar",
-    "users",
 ]
 
 MIDDLEWARE = [
@@ -86,6 +85,14 @@ DATABASES = {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
     }
+    #     "default": {
+    #     "ENGINE": "django.db.backends.postgresql",
+    #     "NAME": "blog",
+    #     "USER": "evgen",
+    #     "PASSWORD": "evgen",
+    #     "HOST": "127.0.0.1",
+    #     "PORT": "5432",
+    # }
 }
 
 
